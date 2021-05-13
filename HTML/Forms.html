@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms demo</h1>
+    <!--This button is outside the form thus it doesn't do anything until applied javascript on it-->
+    <button>Submit</button>
+    <hr />
+    <form action="/tacos">
+      <p>
+        <!--  http://127.0.0.1:5500/tacos?Username=chadzz -->
+        <label for="username">Enter your username: </label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Username"
+          name="Username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter your password: </label>
+        <input id="password" type="password" placeholder="Enter Password" />
+      </p>
+      <p>
+        <label for="color">Choose your color: </label>
+        <input id="color" type="color" />
+      </p>
+      <p>
+        <label for="number">Enter a number: </label>
+        <input type="number" placeholder="Enter numbers only" />
+      </p>
+      <!--this button does not submit the form but the one with type = submit does-->
+      <button type="button">Doesn't submit button</button>
+      <!--this is a button which automatically submit the form -->
+      <button type="Submit">Submit button</button>
+      <!--this is a button which automatically submit the form -->
+      <button>Generic Button</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <input type="text" placeholder="Enter to search" name="search_query" />
+      <button>Youtube Search</button>
+    </form>
+    <hr />
+    <form action="https://www.google.com/search">
+      <input type="text" placeholder="Enter to search" name="q" />
+      <button>google Search</button>
+    </form>
+  </body>
+</html>
