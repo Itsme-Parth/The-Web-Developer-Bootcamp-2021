@@ -51,5 +51,49 @@
       <input type="text" placeholder="Enter to search" name="q" />
       <button>google Search</button>
     </form>
+    <hr />
+    <form action="/tacos">
+      <label for="meal">Please select an entry</label>
+      <select name="meal" id="meal">
+        <option value="fish">Fish</option>
+        <option value="nonVeg">Chicken</option>
+        <option value="Veg">Cheese</option>
+      </select>
+      <p>
+        <label for="cheese">Amount of cheese</label>
+        <input
+          type="range"
+          name="cheeseLevel"
+          id="cheese"
+          value="75"
+          min="1"
+          max="100"
+        />
+      </p>
+      <p>
+        <label for="requests">Any special requests</label>
+        <br />
+        <textarea
+          name="requests"
+          id="requests"
+          cols="50"
+          rows="10"
+          placeholder="Type something here"
+        ></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+    <form action="/dummy">
+      <p>
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <!-- <input type="url"> -->
+      </p>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
