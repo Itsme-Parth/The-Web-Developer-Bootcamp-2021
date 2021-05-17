@@ -1,0 +1,16 @@
+h2 {
+  color: teal;
+  background-color: papayawhip;
+  /* background-color: rgb(0, 61, 1); */
+}
+button {
+  color: purple;
+  background-color: cyan;
+}
+p {
+  color: olive;
+  background: orange;
+}
+body {
+  background-color: #c5e;
+}
