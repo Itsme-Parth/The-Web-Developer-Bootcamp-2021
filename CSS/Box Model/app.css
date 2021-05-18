@@ -1,0 +1,40 @@
+div {
+  width: 300px;
+  height: 300px;
+  /* background-color: beige; */
+}
+h1 {
+  width: 100px;
+  background-color: teal;
+  padding-left: 100px;
+  padding-right: 30px;
+  margin: 0;
+}
+#one {
+  background-color: bisque;
+  border-width: 20px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+#two {
+  background-color: rgba(226, 149, 55, 0.877);
+  border: 2px teal solid;
+  border-right-style: dashed;
+  border-left-style: dashed;
+  padding-right: 60px;
+  margin: 70px;
+}
+#three {
+  background-color: rgb(151, 95, 27);
+  border: 2px black solid;
+  border-radius: 30%;
+}
+button {
+  background-color: yellowgreen;
+  border: 2px solid teal;
+  border-radius: 30%;
+  padding: 20px;
+}
