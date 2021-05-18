@@ -1,0 +1,15 @@
+section {
+  background-color: teal;
+  width: 800px;
+  height: 800px;
+}
+div {
+  background-color: antiquewhite;
+  width: 70%;
+  height: 20%;
+}
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200px;
+}
