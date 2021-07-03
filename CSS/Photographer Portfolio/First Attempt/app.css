@@ -1,0 +1,50 @@
+body {
+  font-family: "Tourney", cursive;
+  padding: 10px;
+}
+
+.images {
+  display: flex;
+}
+
+.img1 {
+  height: 400px;
+  width: 300px;
+  margin: 0 auto;
+  background-image: url(../images/1.jpg);
+  background-position: center;
+}
+
+.img2 {
+  height: 400px;
+  width: 300px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-image: url(../images/2.jpeg);
+  background-position: center;
+}
+
+.img3 {
+  height: 400px;
+  width: 300px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-image: url(../images/3.jpg);
+  background-position: center;
+}
+
+.img4 {
+  height: 400px;
+  width: 300px;
+  background-image: url(../images/4.jpg);
+  background-position: 20%;
+}
+
+.img5 {
+  height: 400px;
+  width: 300px;
+  background-image: url(../images/5.jpg);
+  background-color: antiquewhite;
+  background-position: center;
+  background-repeat: no-repeat;
+}
