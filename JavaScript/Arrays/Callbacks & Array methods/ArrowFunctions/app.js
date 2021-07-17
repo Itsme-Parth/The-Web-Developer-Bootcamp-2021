@@ -6,11 +6,11 @@
 //     return x + y;
 // }
 
-const add = (a, b) => a + b;
+// const add = (a, b) => a + b;
 
-const square = (num) => {
-  return num * num;
-};
+// const square = (num) => {
+//   return num * num;
+// };
 
 // const rollDie = () => {
 //     return Math.floor(Math.random() * 6) + 1
