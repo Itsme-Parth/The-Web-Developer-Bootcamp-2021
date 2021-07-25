@@ -1,25 +1,41 @@
+const tweetForm = document.querySelector("#tweetForm");
+const tweetsContainer = document.querySelector("#tweets");
+tweetForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-
-const tweetForm = document.querySelector('#tweetForm');
-const tweetsContainer = document.querySelector('#tweets');
-tweetForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // const usernameInput = document.querySelectorAll('input')[0];
-    // const tweetInput = document.querySelectorAll('input')[1];
-    const usernameInput = tweetForm.elements.username;
-    const tweetInput = tweetForm.elements.tweet;
-    addTweet(usernameInput.value, tweetInput.value)
-    usernameInput.value = '';
-    tweetInput.value = '';
+  // const usernameInput = document.querySelectorAll('input')[0];
+  // const tweetInput = document.querySelectorAll('input')[1];
+  const usernameInput = tweetForm.elements.username;
+  const tweetInput = tweetForm.elements.tweet;
+  addTweet(usernameInput.value, tweetInput.value);
+  usernameInput.value = "";
+  tweetInput.value = "";
 });
 
 const addTweet = (username, tweet) => {
-    const newTweet = document.createElement('li');
-    const bTag = document.createElement('b');
-    bTag.append(username)
-    newTweet.append(bTag);
-    newTweet.append(`- ${tweet}`)
-    tweetsContainer.append(newTweet);
-}
+  const newTweet = document.createElement("li");
+  const bTag = document.createElement("b");
+  bTag.append(username);
+  newTweet.append(bTag);
+  newTweet.append(`- ${tweet}`);
+  tweetsContainer.append(newTweet);
+};
 
+/* Exercise */
+const form = document.querySelector("form");
+const list = document.querySelector("#list");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const productInput = form.elements.product;
+  const qtyInput = form.elements.qty;
+  addGrocery(productInput.value, qtyInput.value);
+  productInput.value = "";
+  qtyInput.value = "";
+});
+
+const addGrocery = (product, qty) => {
+  const newItem = document.createElement("li");
+  newItem.innerText = `${qty} ${product}s`;
+  list.appendChild(newItem);
+};
